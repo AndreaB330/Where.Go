@@ -1,0 +1,36 @@
+
+#map {
+        width:100%;
+        
+    }
+
+html, body {
+        height: 100%;
+    }
+
+.fullheight {
+        height: 100%;
+    }
+
+.row .col{
+    padding: 0px !important;
+}
+
+h4{
+    margin: 0px !important;
+    margin-bottom: 0.5em !important;
+}
+
+
+.circle {
+		display: inline-block;
+		border-radius: 50%;
+		height:0.5em;
+		width:0.5em;
+		float: left;
+		margin:0;
+		margin-left: 10px;
+	}
+
+.complete {background-color: rgba(255, 255, 255, 1.0);}
+.incomplete {background-color: rgba(255, 255, 255, 0.5);}
