@@ -1,6 +1,8 @@
 from flask import Flask,render_template
 app = Flask(__name__)
 
+app.config.from_pyfile('app.cfg')
+
 Kyiv = {'lat':50.45,'lng':30.52}
 
 @app.route('/')
