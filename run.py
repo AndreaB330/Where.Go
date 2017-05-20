@@ -1,5 +1,6 @@
 from app import *
 import main
+import model
 from flask_uploads import *
 
 if __name__ == '__main__':
