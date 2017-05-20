@@ -14,12 +14,26 @@ def hash(salt, password):
 
 gen_salt = lambda: ''.join(chr(random.randint(32,126)) for i in range(16))
 
+def sqlpls(src, stmt, **params):
+        return db.session.query(src).from_statement(text(stmt)).params(**params).all()
+
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(64), unique=True)
     email = db.Column(db.String(128), unique=True)
     salt = db.Column(db.String(16), nullable=False)
     hash = db.Column(db.String(64), nullable=False)
+
+    def try_complete(self, quest, lat, lon):
+        if quest.location.check_inside(lat, lon):
+            c = Completion(self.id, quest.id)
+            db.session.add(c)
+            db.session.commit()
+            return True
+        return False
+
+    def incomplete_in_cat(self, category):
+        return sqlpls(Location, "SELECT * FROM quest WHERE quest.cat_id = :cid AND quest.id NOT IN (SELECT qid FROM completion WHERE quest.uid = :uid)", cid=category.id, uid=self.id)
 
     def __init__(self, username, email, password):
         self.username = username
@@ -71,3 +85,7 @@ class Completion(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     uid = db.Column(db.Integer, db.ForeignKey('user.id'), db.backref('completions', lazy='dynamic'))
     qid = db.Column(db.Integer, db.ForeignKey('quest.id'))
+
+    def __init__(self, uid ,qid):
+        self.uid = uid
+        self.qid = qid
