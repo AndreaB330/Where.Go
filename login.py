@@ -4,8 +4,6 @@ from model import hash
 from flask import render_template
 from flask_login import LoginManager, UserMixin, login_user, logout_user, current_user
 
-Kyiv = {'lat':50.45,'lng':30.52}
-
 @app.route('/login', methods=['POST'])
 def homepage():
     username = request.form['username']
