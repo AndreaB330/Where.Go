@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#map {
+				height: 100%;
+				width:70%;
+				float:right;
+			}
+			#menu {
+				height:100%;
+				width:30%;
+				float:left;
+				background-color:#fff;
+			}
+			#header {
+				width: 100%;
+				height: 40px;
+				background-color:rgb(66, 133, 244);
+				line-height: 40px;
+				text-align: center;
+				font-size: 20px;
+				color: rgba(255, 255, 255, 0.9);
+				-webkit-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+				box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+			}
+			html, body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				font-family:Arial;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="menu">
+			<div id="header">
+			Flamin.Go
+			</div>
+		</div>
+		<div id="map"></div>
+		<script>
+			var map;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 12,
+					center: new google.maps.LatLng({{center['lat']}},{{center['lng']}}),
+					mapTypeId: 'roadmap'
+				});	
+			}
+			window.onload = function(){
+				var latLng = new google.maps.LatLng(2.8,-187.3);
+				var marker = new google.maps.Marker({
+					position: latLng,
+					map: map
+				});
+				marker.addListener('click', function() {
+				  map.setZoom(8);
+				  map.setCenter(marker.getPosition());
+				});	
+			};
+		</script>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key={{API_KEY}}&callback=initMap">
+		</script>
+	</body>
+</html>
