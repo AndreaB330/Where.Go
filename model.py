@@ -23,6 +23,7 @@ class User(db.Model):
     email = db.Column(db.String(128), unique=True)
     salt = db.Column(db.String(16), nullable=False)
     hash = db.Column(db.String(64), nullable=False)
+    completions = db.relationship('Completion', backref='user', lazy='dynamic')
 
     def try_complete(self, quest, lat, lon):
         if quest.location.check_inside(lat, lon):
@@ -83,7 +84,7 @@ class Category(db.Model):
 
 class Completion(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    uid = db.Column(db.Integer, db.ForeignKey('user.id'), db.backref('completions', lazy='dynamic'))
+    uid = db.Column(db.Integer, db.ForeignKey('user.id'))
     qid = db.Column(db.Integer, db.ForeignKey('quest.id'))
 
     def __init__(self, uid ,qid):
