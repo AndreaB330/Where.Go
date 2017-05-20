@@ -21,16 +21,21 @@ h4{
     margin-bottom: 0.5em !important;
 }
 
+.card{
+    margin : 0px !important;
+}
 
 .circle {
 		display: inline-block;
 		border-radius: 50%;
-		height:0.5em;
-		width:0.5em;
+		height: 0.5em;
+		width: 0.5em;
 		float: left;
-		margin:0;
+/*        margin:100px;*/
+		margin-top:0.5em;
 		margin-left: 10px;
-	}
+}
+
 
 .complete {background-color: rgba(255, 255, 255, 1.0);}
 
