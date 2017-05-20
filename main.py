@@ -5,5 +5,5 @@ Kyiv = {'lat':50.45,'lng':30.52}
 
 @app.route('/')
 def homepage():
-    return render_template('index.html', API_KEY = app.config['API_KEY'], center = Kyiv)
+    return render_template('index.html', API_KEY = app.config['API_KEY'], FB_APP_ID=app.config['FB_APP_ID'], center=Kyiv)
 
