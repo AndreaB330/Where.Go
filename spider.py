@@ -10,7 +10,7 @@ link = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" \
        "key=AIzaSyBUx9LXpRH2sKejir6MHVTqRr_48GnUi1A"
 
 def getNearestSearch(searchParams):
-    link =  "https://maps.googleapis.com/maps/api   /place/nearbysearch/json"
+    link =  "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     r = requests.get(link, params = searchParams)
     print(r.url)
     return r.text
