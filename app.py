@@ -1,13 +1,15 @@
-from flask import Flask,render_template
+import logging
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager
+
 app = Flask(__name__)
-
 app.config.from_pyfile('app.cfg')
+db = SQLAlchemy(app)
 
-Kyiv = {'lat':50.45,'lng':30.52}
+logging.basicConfig()
+logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
 
-@app.route('/')
-def homepage():
-    return render_template('index.html',API_KEY = app.config['API_KEY'],center = Kyiv)
+lman = LoginManager()
+lman.init_app(app)
 
-if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
