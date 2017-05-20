@@ -19,7 +19,8 @@ def homepage():
     login_user(user)
     flash('Logged in successfully')
 
-@app.route('/register', method=['POST']):
+@app.route('/register', method=['POST'])
+def register():
     username = request.form['username']
     email = request.form['email']
     password = request.form['password']
