@@ -25,18 +25,35 @@ h4{
     margin : 0px !important;
 }
 
+.placecardtitle{
+    margin-top:0px !important;
+}
+
+.placeshint{
+    color:white; 
+    background-color: #3483C3 !important;
+    margin-bottom: 0px !important;
+    padding: 0.5em !important;
+}
+
+.lightgray{
+    color:gray;
+}
+
 .circle {
 		display: inline-block;
 		border-radius: 50%;
 		height: 0.5em;
 		width: 0.5em;
 		float: left;
-/*        margin:100px;*/
 		margin-top:0.5em;
-		margin-left: 10px;
+		margin-left: 0.35em;
 }
-
 
 .complete {background-color: rgba(255, 255, 255, 1.0);}
 
 .incomplete {background-color: rgba(255, 255, 255, 0.5);}
+
+.completeorange{background-color: rgba(252, 195, 2, 1.0);}
+
+.incompleteorange{background-color: rgba(252, 195, 2, 0.3);}
