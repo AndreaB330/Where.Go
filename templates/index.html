@@ -11,10 +11,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 	</head>
-	<body>
-
-        <div class="row fullheight">
-            <div class="col s12 m6 l3 fullheight">
+	<body>  
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="static/js/materialize.min.js"></script>
+        
+        
+        <div id="slide-out" class="side-nav fixed">
                 <!-- Левый СайдБар -->
                 
                 <!-- Карточка с названием, количеством выполненных и описанием -->
@@ -92,11 +95,60 @@
                 </div>
                 
                 
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="static/saxon.jpeg" style="width:100px;">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h5 class="placecardtitle">Skybar</h5>
+                            
+                            <p style = "float: left; padding-right : 0.3em">4.0</p>
+                            <div class="circle completeorange"></div>
+                            <div class="circle completeorange"></div>
+                            <div class="circle completeorange"></div>
+                            <div class="circle completeorange"></div>
+                            <div class="circle incompleteorange"></div><br>
+
+                            <p>Кафе · Peremohy Ave, 3 <br>
+                                Opens at 8:00 AM</p>
+                        </div>
+                    </div>
+                </div>
                 
                 
-            </div><!-- Конец Левого СайдБара -->
+                
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="static/saxon.jpeg" style="width:100px;">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h5 class="placecardtitle">Skybar</h5>
+                            
+                            <p style = "float: left; padding-right : 0.3em">4.0</p>
+                            <div class="circle completeorange"></div>
+                            <div class="circle completeorange"></div>
+                            <div class="circle completeorange"></div>
+                            <div class="circle completeorange"></div>
+                            <div class="circle incompleteorange"></div><br>
+
+                            <p>Кафе · Peremohy Ave, 3 <br>
+                                Opens at 8:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <img src="static/logo.png" alt="" class="responsive-img logotype"> 
             
-            <div class="col s9 fullheight">
+        </div>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="large mdi-navigation-menu"></i></a>
+        
+        
+        <div class="row fullheight">
+           
+            <div class="col s12 fullheight">
                 <!-- Карта -->
                 <div id="map" class = "fullheight"></div>
             </div>
@@ -104,8 +156,15 @@
         </div>
 
     
+        <script>
+             $('.button-collapse').sideNav({
+                  menuWidth: 400, // Default is 300
+                  draggable: true // Choose whether you can drag to open on touch screens
+                }
+              );
+        </script>
 
-		<script>  
+		<script>   
 			var map;
 			function initMap() {
 				map = new google.maps.Map(document.getElementById('map'), {
@@ -140,10 +199,6 @@
 			src="https://maps.googleapis.com/maps/api/js?key={{API_KEY}}&callback=initMap">
 		</script>
         
-        
-        
-         <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="static/js/materialize.min.js"></script>
+    
 	</body>
 </html>
