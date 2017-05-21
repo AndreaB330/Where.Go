@@ -43,14 +43,12 @@
                             <div class="circle incomplete"></div><br>
                         </div>
                         <script>
-                            
                             $.ajax({
                               type: "GET",
                               url: "/events/1",
                               success: function(msg) {
                                   events = JSON.parse(msg);
                                   events[0]['name']
-                                  
                                   for(var i = 0; i< 10; i++){
                                     var string  = '<div class="card horizontal clickable">' 
                                             + '<div class="card-image">' 
@@ -59,7 +57,6 @@
                                             + '<h5 class="placecardtitle">' + events[i]['name'] 
                                             + '</h5> <br>' + '<p style = "float: left; padding-right : 0.3em">' 
                                             + events[i]['rating'] + '</p>';
-                                      
                                     var k;
                                     for(var a = 0; a < events[i]['rating']; a++){
                                         string += '<div class="circle completeorange"></div>';
@@ -69,15 +66,9 @@
                                         string += '<div class="circle incompleteorange"></div>';
                                     }
                                     string += '<br> </div></div></div>';
-
                                     document.getElementById('places_cards').innerHTML += string;
-                            
                                     add_marker(events[i]);
-                                    
                                   } 
-                                 
-                                  
-                                  
                               }
                             });
                             
@@ -104,9 +95,6 @@
                             }
 
                         </script>    
-                        
-        
-                        
                         <p style = "color: white; padding-top: 0.2em">10 мест, которые обязательно стоит посетить людям, которые полны энергии и жаждут развлечений</p>
                     </div>
                     
@@ -172,21 +160,6 @@
                     '<button class="btn waves-effect waves-light green" type="submit" name="action">Я тут был! <i class="material-icons right">send</i></button>'+
                     '</div>'+
                 '</div>';
-//
-//                '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-//                    'sandstone rock formation in the southern part of the '+
-//                    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-//                    'south west of the nearest large town, Alice Springs; 450&#160;km '+
-//                    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-//                    'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-//                    'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-//                    'Aboriginal people of the area. It has many springs, waterholes, '+
-//                    'rock caves and ancient paintings. Uluru is listed as a World '+
-//                    'Heritage Site.</p>'+
-//                    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-//                    'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-//                    '(last visited June 22, 2009).</p>'+
-                
             var infowindow = new google.maps.InfoWindow({
               content: contentString,
                 maxWidth: 300,
@@ -213,9 +186,6 @@
               });
 
             }
-        
-           
-
 		</script>
 		<script async defer
 			src="https://maps.googleapis.com/maps/api/js?key={{API_KEY}}&callback=initMap">
