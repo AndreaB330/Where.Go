@@ -54,7 +54,7 @@
                                   for(var i = 0; i< 10; i++){
                                     var string  = '<div class="card horizontal clickable">' 
                                             + '<div class="card-image">' 
-                                            + '<img src="static/' + events[i]['id'] + '.jpg" style="width:100px;">'
+                                            + '<img src="static/' + events[i]['id'] + '.jpg" style="padding-top: 1em; padding-left: 1em; height: 50%; overflow: hidden; width:110px; height:110px">'
                                             + '</div><div class="card-stacked"><div class="card-content">' 
                                             + '<h5 class="placecardtitle">' + events[i]['name'] 
                                             + '</h5> <br>' + '<p style = "float: left; padding-right : 0.3em">' 
@@ -146,7 +146,7 @@
             );
 
             $(".clickable").click(function(){
-                alert("Нажали на карточку")
+                alert("Нажали на карточку");
             });
         </script>
 
