@@ -11,7 +11,7 @@ def category(cid):
 @app.route('/events/<cid>')
 def events(cid):
     c = Category.query.filter_by(id=cid).first_or_404()
-    ls = c.locations.all()
+    ls = c.locations
     l = [{'name':x.name, 'lat':x.lat,'lon':x.lon} for l in ls]
     return json.dumps(l)
 
