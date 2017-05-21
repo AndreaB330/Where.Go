@@ -15,7 +15,7 @@ def events(cid):
     co = Completion.query.filter_by(uid=1).all()
     cs = [l.lid for l in co]
     l = [{'id': x.id, 'name':x.name, 'lat':x.lat,'lon':x.lon, 'rating': x.rating, 'complete': x.id in cs} for x in ls]
-    return json.dumps(l)
+    return json.dumps(sorted(l, key=lambda x:x['rating']))
 
 @app.route('/complete/<lid>')
 def complete(lid):

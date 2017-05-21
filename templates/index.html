@@ -67,7 +67,7 @@
                                     }
                                     string += '<br> </div></div></div>';
                                     document.getElementById('places_cards').innerHTML += string;
-                                    add_marker(events[i]);
+                                    add_marker(events[i], events[i]['complete']);
                                   } 
                               }
                             });
@@ -149,15 +149,16 @@
 					mapTypeId: 'roadmap'
 				});	
 			}
-            
-            
-            function add_marker(event){
-                    
+            function add_marker(event, complete){
+		    var s = "";
+		    if (complete)
+			    s = '<button class="btn waves-effect waves-light green" type="submit" name="action">Я тут был! <i class="material-icons right">send</i></button>';
+
             var contentString = 
                 '<div id="content">'+
                     '<h5 id="firstHeading" class="firstHeading">' + event['name'] + '</h5>'+
                     '<div id="bodyContent">'+
-                    '<button class="btn waves-effect waves-light green" type="submit" name="action">Я тут был! <i class="material-icons right">send</i></button>'+
+			    s +
                     '</div>'+
                 '</div>';
             var infowindow = new google.maps.InfoWindow({
@@ -165,9 +166,6 @@
                 maxWidth: 300,
                 maxHeight: 300
             });
-                
-                
-                
               var latLng = new google.maps.LatLng(event['lat'], event['lon']);
               var marker = new google.maps.Marker({
                 position: latLng,
