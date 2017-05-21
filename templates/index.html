@@ -29,14 +29,13 @@
                     <div class="card-content" style = "background-color: #2DB062">
 <!--                        <h4 style = "color: white">"Ночная Жизнь"</h4>-->
                         <!-- Dropdown Trigger -->
-                          <a class='dropdown-button btn-large' style = "background-color: #FCC302; font-weight:bold; font-size:1.6em; margin-bottom:1em; text-transform: capitalize;" href='#' data-activates='dropdown1'>Ночная Жизнь</a>
+                          <a class='dropdown-button btn-large' style = "background-color: #FCC302; font-weight:bold; font-size:1.6em; margin-bottom:1em; text-transform: capitalize;" href='#' data-activates='dropdown1' id="scname">Ночная Жизнь</a>
 
                           <!-- Dropdown Structure -->
                           <ul id='dropdown1' class='dropdown-content'>
-                            <li><a href="#!">Архитектура</a></li>
-                            <li><a href="#!">Фотография</a></li>
-                            <li><a href="#!">Активный Отдых</a></li>
-                            <li><a href="#!">Спокойное времяпровождение</a></li>
+                            <li><a href="#!" onclick="select_category(1)">Ночная жизнь</a></li>
+                            <li><a href="#!" onclick="select_category(2)">Достопримечальности</a></li>
+                            <li><a href="#!" onclick="select_category(2)">Фото</a></li>
                           </ul>
                         <br>
                        
@@ -56,6 +55,7 @@
                         <script>
 			var category=1;
             var arrayOfMarkers = [];
+function select_category(cat) {category = cat; reload();}
                             
 			function load_category(cat) {
                 $.ajax({
@@ -92,6 +92,15 @@
                       add_places(completed, events.length);
                   }
                 });
+				$.ajax({
+					type: "GET",
+					url: '/category/' + cat,
+					success: function(msg) {
+						j = JSON.parse(msg);
+						document.getElementById('cname').inner.HTML = j['name'];
+						document.getElementById('scname').inner.HTML = j['short_name'];
+					}
+				});
 			}
 			function reload() {
                 //Delete markers
@@ -129,7 +138,7 @@
                             }
 
                         </script>    
-                        <p style = "color: white; padding-top: 0.2em">10 мест, которые обязательно стоит посетить людям, которые полны энергии и жаждут развлечений</p>
+                        <p id="cname" style = "color: white; padding-top: 0.2em">10 мест, которые обязательно стоит посетить людям, которые полны энергии и жаждут развлечений</p>
                     </div>
                     
 		    <div id="status"></div>

@@ -79,6 +79,7 @@ class Location(db.Model):
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(128))
+    short_name = db.Column(db.String(64))
     locations = db.relationship('Location', secondary=quest,
             backref=db.backref('categories', lazy='dynamic'))
 
