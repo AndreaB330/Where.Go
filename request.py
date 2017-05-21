@@ -12,7 +12,9 @@ def category(cid):
 def events(cid):
     c = Category.query.filter_by(id=cid).first_or_404()
     ls = c.locations
-    l = [{'name':x.name, 'lat':x.lat,'lon':x.lon} for x in ls]
+    co = Completion.query.filter_by(uid=1).all()
+    cs = [l.lid for l in co]
+    l = [{'name':x.name, 'lat':x.lat,'lon':x.lon, 'rating': x.rating, 'complete': x.id in cs} for x in ls]
     return json.dumps(l)
 
 @app.route('/complete/<lid>')
