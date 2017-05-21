@@ -61,11 +61,6 @@ class User(db.Model):
 # maximal distance between two points to consider them to be in same place
 EPS = 1e-6
 
-class Quest(db.Model):
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    loc_id = db.Column(db.Integer, db.ForeignKey('location.id'))
-    cat_id = db.Column(db.Integer, db.ForeignKey('category.id'))
-
 quest=db.Table('quest',
         db.Column('loc_id', db.Integer, db.ForeignKey('location.id')),
         db.Column('cat_id', db.Integer, db.ForeignKey('category.id')),
