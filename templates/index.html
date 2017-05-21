@@ -136,9 +136,6 @@
             $(".clickable").click(function(){
                 alert("Нажали на карточку");
             });
-	$(".completer").click(function(){
-		alert("Pushbutton!");
-	})
         </script>
 
 		<script>   
@@ -154,8 +151,12 @@
 			}
             function add_marker(event, complete){
 		    var s = "";
-		    if (!complete)
+		    if (!complete) {
 			    s = '<button class="completer btn waves-effect waves-light green" type="submit" name="action">Я тут был! <i class="material-icons right">send</i></button>';
+			$(".completer").click(function(){
+				alert("Pushbutton!");
+			})
+		    }
 
             var contentString = 
                 '<div id="content">'+
