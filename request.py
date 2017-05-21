@@ -19,6 +19,6 @@ def events(cid):
 
 @app.route('/complete/<lid>')
 def complete(lid):
-    c = Completion(0, lid)
+    c = Completion(1, lid)
     db.session.add(c)
     db.session.commit()

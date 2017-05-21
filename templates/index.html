@@ -43,9 +43,11 @@
                             <div class="circle incomplete"></div><br>
                         </div>
                         <script>
+			var category=1;
+			function load_category(cat) {
                             $.ajax({
                               type: "GET",
-                              url: "/events/1",
+                              url: "/events/" + cat,
                               success: function(msg) {
                                   events = JSON.parse(msg);
                                   events[0]['name']
@@ -71,6 +73,11 @@
                                   } 
                               }
                             });
+			}
+			function reload() {
+				load_category(category);
+			}
+			window.onload = reload
                             
                             
                             var places_count = 0;
@@ -150,7 +157,11 @@
 				});	
 			}
 		function complete_event(event_id) {
-			alert("Test!");
+			$.ajax({
+				url: '/complete/' + event_id,
+				type: 'GET',
+				success: reload()
+			});
 		}
             function add_marker(event, complete){
 		    var s = "";
