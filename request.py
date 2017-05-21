@@ -6,7 +6,7 @@ import json
 @app.route('/category/<cid>')
 def category(cid):
     c = Category.query.filter_by(id=cid).first_or_404()
-    return jsonify(name=c.name)
+    return jsonify(name=c.name, short_name=c.short_name)
 
 @app.route('/events/<cid>')
 def events(cid):
