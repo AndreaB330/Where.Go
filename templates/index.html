@@ -58,34 +58,40 @@
             var arrayOfMarkers = [];
                             
 			function load_category(cat) {
-                            $.ajax({
-                              type: "GET",
-                              url: "/events/" + cat,
-                              success: function(msg) {
-                                  events = JSON.parse(msg);
-                                  events[0]['name'];
-                                  for(var i = 0; i< 10; i++){
-                                    var string  = '<div class="card horizontal clickable" onClick="google.maps.event.trigger(markers[' + i +'], "click");">' 
-                                            + '<div class="card-image">' 
-                                            + '<img src="static/' + events[i]['id'] + '.jpg" style="padding-top: 1em; padding-left: 1em; height: 50%; overflow: hidden; width:110px; height:110px">'
-                                            + '</div><div class="card-stacked"><div class="card-content">' 
-                                            + '<h5 class="placecardtitle">' + events[i]['name'] 
-                                            + '</h5> <br>' + '<p style = "float: left; padding-right : 0.3em">' 
-                                            + events[i]['rating'] + '</p>';
-                                    var k;
-                                    for(var a = 0; a < events[i]['rating']; a++){
-                                        string += '<div class="circle completeorange"></div>';
-                                        k = a;
-                                    }
-                                    for(var a = k; a < 5; a++){
-                                        string += '<div class="circle incompleteorange"></div>';
-                                    }
-                                    string += '<br> </div></div></div>';
-                                    document.getElementById('places_cards').innerHTML += string;
-                                    add_marker(events[i], events[i]['complete']);
-                                  } 
-                              }
-                            });
+                $.ajax({
+                  type: "GET",
+                  url: "/events/" + cat,
+                  success: function(msg) {
+                      events = JSON.parse(msg);
+                      var completed = 0;
+                      for(var i = 0; i< events.length; i++){
+                          if (events[i]['complete']) {
+                              completed++;
+                          } else {
+                              var string  = '<div class="card horizontal clickable" onClick="google.maps.event.trigger(markers[' + i +'], "click");">' 
+                                + '<div class="card-image">' 
+                                + '<img src="static/' + events[i]['id'] + '.jpg" style="padding-top: 1em; padding-left: 1em; height: 50%; overflow: hidden; width:110px; height:110px">'
+                                + '</div><div class="card-stacked"><div class="card-content">' 
+                                + '<h5 class="placecardtitle">' + events[i]['name'] 
+                                + '</h5> <br>' + '<p style = "float: left; padding-right : 0.3em">' 
+                                + events[i]['rating'] + '</p>';
+                        var k;
+                        for(var a = 0; a < events[i]['rating']; a++){
+                            string += '<div class="circle completeorange"></div>';
+                            k = a;
+                        }
+                        for(var a = k; a < 5; a++){
+                            string += '<div class="circle incompleteorange"></div>';
+                        }
+                        string += '<br> </div></div></div>';
+                        document.getElementById('places_cards').innerHTML += string;
+                          }
+
+                        add_marker(events[i], events[i]['complete']);
+                      }
+                      add_places(completed, events.length);
+                  }
+                });
 			}
 			function reload() {
                 //Delete markers
@@ -97,29 +103,28 @@
                     arrayOfMarkers = []
                 }
                 
-				load_category(category);
+				setTimeout(function(){load_category(category)}, 500);
 			}
-			window.onload = reload
-                            
-                            
-                            var places_count = 0;
-
-                            function add_place(){
-                                places_count ++ ;
+			window.onload = function(){
+                $.ajax({
+				    url: '/clear',
+				    type: 'GET',
+				    success: reload()
+			     });
+            }                   
+                            function add_places(count, max){
                                 document.getElementById("places_count").innerHTML = "";
                                 document.getElementById("places_count_number").innerHTML = "";
                                 
-                                if(places_count > 10)
-                                    places_count = 10;
-                                
-                                for(var i = 0; i < places_count; i ++){
+                                if(count > max) count = max;
+                                for(var i = 0; i < count; i ++){
                                     document.getElementById("places_count").innerHTML += ('<div class="circle complete"></div>');
                                 }   
-                                for(var i = places_count; i < 10; i ++){
+                                for(var i = count; i < max; i ++){
                                     document.getElementById("places_count").innerHTML += ('<div class="circle incomplete"></div>');
                                 }
                                 
-                                document.getElementById("places_count_number").innerHTML = places_count + " / 10";                                
+                                document.getElementById("places_count_number").innerHTML = count + " / " + max;                                
                                 document.getElementById("places_count").innerHTML += "<br>";
                             }
 
@@ -205,11 +210,21 @@
                 maxHeight: 300
             });
               var latLng = new google.maps.LatLng(event['lat'], event['lon']);
-              var marker = new google.maps.Marker({
+
+                if (complete) {
+                                    var marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                icon: "static/greenmarker.png"
+                });
+
+                } else {
+                var marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
                 icon: "static/graymarker.png"
-              });
+                });
+              }
               marker.addListener('click', function() {
                 if(opened){
                     if(tempWindow != null)

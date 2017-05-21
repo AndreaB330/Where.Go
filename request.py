@@ -22,3 +22,10 @@ def complete(lid):
     c = Completion(1, lid)
     db.session.add(c)
     db.session.commit()
+    return json.dumps({'success': 1})
+    
+@app.route('/clear')
+def clear():
+    Completion.query.delete()
+    db.session.commit()
+    return json.dumps({'success': 1})
