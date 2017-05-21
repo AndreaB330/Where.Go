@@ -27,7 +27,18 @@
                     </div>
                     
                     <div class="card-content" style = "background-color: #2DB062">
-                        <h4 style = "color: white">"Ночная Жизнь"</h4>
+<!--                        <h4 style = "color: white">"Ночная Жизнь"</h4>-->
+                        <!-- Dropdown Trigger -->
+                          <a class='dropdown-button btn-large' style = "background-color: #FCC302; font-weight:bold; font-size:1.6em; margin-bottom:1em; text-transform: capitalize;" href='#' data-activates='dropdown1'>Ночная Жизнь</a>
+
+                          <!-- Dropdown Structure -->
+                          <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Архитектура</a></li>
+                            <li><a href="#!">Фотография</a></li>
+                            <li><a href="#!">Активный Отдых</a></li>
+                            <li><a href="#!">Спокойное времяпровождение</a></li>
+                          </ul>
+                        <br>
                        
                         <p id = "places_count_number" style = "color: white; float: left; padding-right : 0.3em">0 / 10</p>
                         
@@ -50,9 +61,10 @@
                               url: "/events/" + cat,
                               success: function(msg) {
                                   events = JSON.parse(msg);
-                                  events[0]['name']
+                                  events[0]['name'];
+				  arrayOfMarkers = new Array(10);
                                   for(var i = 0; i< 10; i++){
-                                    var string  = '<div class="card horizontal clickable">' 
+                                    var string  = '<div class="card horizontal clickable" onClick="google.maps.event.trigger(markers[' + i +'], "click");">' 
                                             + '<div class="card-image">' 
                                             + '<img src="static/' + events[i]['id'] + '.jpg" style="padding-top: 1em; padding-left: 1em; height: 50%; overflow: hidden; width:110px; height:110px">'
                                             + '</div><div class="card-stacked"><div class="card-content">' 
@@ -166,7 +178,7 @@
             function add_marker(event, complete){
 		    var s = "";
 		    if (!complete) {
-			    s = '<button class="completer btn waves-effect waves-light green" type="submit" name="action" onclick="complete_event(' + event['id'] + ')">Я тут был! <i class="material-icons right">send</i></button>';
+			    s = '<button class="completer btn waves-effect waves-light" style="background-color:#2DB062" type="submit" name="action" onclick="complete_event(' + event['id'] + ')">Я тут был! <i class="material-icons right">send</i></button>';
 		    }
 
             var contentString = 
@@ -198,6 +210,7 @@
                 map.setCenter(marker.getPosition());
                 opened = true;
               });
+		    arrayOfMarkers[event.id] = marker;
 
             }
 		</script>
