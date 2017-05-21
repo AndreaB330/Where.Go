@@ -52,27 +52,25 @@
                                   events[0]['name']
                                   
                                   for(var i = 0; i< 10; i++){
-                                    document.getElementById('places_cards').innerHTML += '<div class="card horizontal clickable">';
-                                    document.getElementById('places_cards').innerHTML += '<div class="card-image">';
-//                                    <img src="static/saxon.jpeg" style="width:100px;">
-                                    document.getElementById('places_cards').innerHTML += '</div><div class="card-stacked"><div class="card-content"><h5 class="placecardtitle">';
-                                    document.getElementById('places_cards').innerHTML += events[i]['name'];
-                                    document.getElementById('places_cards').innerHTML +='</h5> <p style = "float: left; padding-right : 0.3em">';
-                                    document.getElementById('places_cards').innerHTML += events[i]['rating'];
-                                    document.getElementById('places_cards').innerHTML += '</p>';
-                                      var k;
+                                    var string  = '<div class="card horizontal clickable">' 
+                                            + '<div class="card-image">' 
+                                            + '<img src="static/saxon.jpeg" style="width:100px;">'
+                                            + '</div><div class="card-stacked"><div class="card-content">' 
+                                            + '<h5 class="placecardtitle">' + events[i]['name'] 
+                                            + '</h5> <br>' + '<p style = "float: left; padding-right : 0.3em">' 
+                                            + events[i]['rating'] + '</p>';
+                                      
+                                    var k;
                                     for(var a = 0; a < events[i]['rating']; a++){
-                                        document.getElementById('places_cards').innerHTML += '<div class="circle completeorange"></div>';
+                                        string += '<div class="circle completeorange"></div>';
                                         k = a;
                                     }
                                     for(var a = k; a < 5; a++){
-                                        document.getElementById('places_cards').innerHTML += '<div class="circle incompleteorange"></div>';
+                                        string += '<div class="circle incompleteorange"></div>';
                                     }
-                                    document.getElementById('places_cards').innerHTML += '<br>';
+                                    string += '<br> </div></div></div>';
 
-//                                <p>Кафе · Peremohy Ave, 3 <br>
-//                                    Opens at 8:00 AM</p>
-                                    document.getElementById('places_cards').innerHTML += '</div></div> </div>';
+                                    document.getElementById('places_cards').innerHTML += string;
                             
                                   } 
                                  
