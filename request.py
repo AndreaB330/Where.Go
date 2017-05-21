@@ -12,7 +12,7 @@ def category(cid):
 def events(cid):
     c = Category.query.filter_by(id=cid).first_or_404()
     ls = c.locations
-    l = [{'name':x.name, 'lat':x.lat,'lon':x.lon} for l in ls]
+    l = [{'name':x.name, 'lat':x.lat,'lon':x.lon} for x in ls]
     return json.dumps(l)
 
 @app.route('/complete/<lid>')
