@@ -54,7 +54,7 @@
                                   for(var i = 0; i< 10; i++){
                                     var string  = '<div class="card horizontal clickable">' 
                                             + '<div class="card-image">' 
-                                            + '<img src="static/saxon.jpeg" style="width:100px;">'
+                                            + '<img src="static/' + events[i]['id'] + '.jpg" style="width:100px;">'
                                             + '</div><div class="card-stacked"><div class="card-content">' 
                                             + '<h5 class="placecardtitle">' + events[i]['name'] 
                                             + '</h5> <br>' + '<p style = "float: left; padding-right : 0.3em">' 
@@ -72,8 +72,7 @@
 
                                     document.getElementById('places_cards').innerHTML += string;
                             
-                                    add_marker(events[i]['lat'], events[i]['lon']);
-//                                      alert(events[i])
+                                    add_marker(events[i]);
                                     
                                   } 
                                  
@@ -153,6 +152,8 @@
 
 		<script>   
 			var map;
+            var tempWindow;
+            var opened = false;
 			function initMap() {
 				map = new google.maps.Map(document.getElementById('map'), {
 					zoom: 12,
@@ -162,22 +163,58 @@
 			}
             
             
-            function add_marker(lat, lon){
-              var latLng = new google.maps.LatLng(lat, lon);
+            function add_marker(event){
+                    
+            var contentString = 
+                '<div id="content">'+
+                    '<h5 id="firstHeading" class="firstHeading">' + event['name'] + '</h5>'+
+                    '<div id="bodyContent">'+
+                    '<button class="btn waves-effect waves-light green" type="submit" name="action">Я тут был! <i class="material-icons right">send</i></button>'+
+                    '</div>'+
+                '</div>';
+//
+//                '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+//                    'sandstone rock formation in the southern part of the '+
+//                    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+//                    'south west of the nearest large town, Alice Springs; 450&#160;km '+
+//                    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+//                    'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+//                    'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+//                    'Aboriginal people of the area. It has many springs, waterholes, '+
+//                    'rock caves and ancient paintings. Uluru is listed as a World '+
+//                    'Heritage Site.</p>'+
+//                    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+//                    'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+//                    '(last visited June 22, 2009).</p>'+
+                
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString,
+                maxWidth: 300,
+                maxHeight: 300
+            });
+                
+                
+                
+              var latLng = new google.maps.LatLng(event['lat'], event['lon']);
               var marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
                 icon: "static/graymarker.png"
               });
               marker.addListener('click', function() {
+                if(opened){
+                    if(tempWindow != null)
+                        tempWindow.close();   
+                }
+                infowindow.open(map, marker);
+                tempWindow = infowindow;
                 map.setCenter(marker.getPosition());
-                    add_place();
+                opened = true;
               });
+
             }
-            
-			window.onload = function(){
-                
-			};
+        
+           
 
 		</script>
 		<script async defer
