@@ -69,6 +69,7 @@ class Quest(db.Model):
 class Location(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(128))
+    rating = db.Column(db.Integer)
     lat = db.Column(db.Float)
     lon = db.Column(db.Float)
     quests = db.relationship('Quest', backref=db.backref('location', lazy='joined'), lazy='dynamic')

@@ -1,6 +1,7 @@
 from app import *
 import main
 import model
+import request
 
 if __name__ == '__main__':
     db.create_all()
