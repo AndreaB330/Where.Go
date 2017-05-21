@@ -52,7 +52,7 @@
             
                 
                  <!-- Карточки с местами-->
-                <div class="card horizontal">
+                <div class="card horizontal clickable">
                     <div class="card-image">
                         <img src="static/saxon.jpeg" style="width:100px;">
                     </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 
-                <div class="card horizontal">
+                <div class="card horizontal clickable">
                     <div class="card-image">
                         <img src="static/saxon.jpeg" style="width:100px;">
                     </div>
@@ -95,7 +95,7 @@
                 </div>
                 
                 
-                <div class="card horizontal">
+                <div class="card horizontal clickable">
                     <div class="card-image">
                         <img src="static/saxon.jpeg" style="width:100px;">
                     </div>
@@ -118,7 +118,7 @@
                 
                 
                 
-                <div class="card horizontal">
+                <div class="card horizontal clickable">
                     <div class="card-image">
                         <img src="static/saxon.jpeg" style="width:100px;">
                     </div>
@@ -157,11 +157,15 @@
 
     
         <script>
-             $('.button-collapse').sideNav({
-                  menuWidth: 400, // Default is 300
-                  draggable: true // Choose whether you can drag to open on touch screens
-                }
-              );
+            $('.button-collapse').sideNav({
+                menuWidth: 400, // Default is 300
+                draggable: true // Choose whether you can drag to open on touch screens
+            }
+            );
+
+            $(".clickable").click(function(){
+                alert("Нажали на карточку")
+            });
         </script>
 
 		<script>   
@@ -190,6 +194,9 @@
               var marker = new google.maps.Marker({
                 position: latLng,
                 map: map
+              });
+              marker.addListener('click', function() {
+                map.setCenter(marker.getPosition());
               });
                 
 			};
