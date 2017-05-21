@@ -66,13 +66,17 @@ class Quest(db.Model):
     loc_id = db.Column(db.Integer, db.ForeignKey('location.id'))
     cat_id = db.Column(db.Integer, db.ForeignKey('category.id'))
 
+quest=db.Table('quest',
+        db.Column('loc_id', db.Integer, db.ForeignKey('location.id')),
+        db.Column('cat_id', db.Integer, db.ForeignKey('category.id')),
+        )
+
 class Location(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(128))
     rating = db.Column(db.Integer)
     lat = db.Column(db.Float)
     lon = db.Column(db.Float)
-    quests = db.relationship('Quest', backref=db.backref('location', lazy='joined'), lazy='dynamic')
 
     def check_inside(self, lat, lon):
         return math.sqrt((self.lat - lat) ** 2 + (self.lon - lon) ** 2) <= EPS
@@ -80,14 +84,14 @@ class Location(db.Model):
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(128))
-    locations = db.relationship('Location', secondary=Quest,
+    locations = db.relationship('Location', secondary=quest,
             backref=db.backref('categories', lazy='dynamic'))
 
 class Completion(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     uid = db.Column(db.Integer, db.ForeignKey('user.id'))
-    qid = db.Column(db.Integer, db.ForeignKey('quest.id'))
+    lid = db.Column(db.Integer, db.ForeignKey('location.id'))
 
-    def __init__(self, uid ,qid):
+    def __init__(self, uid ,lid):
         self.uid = uid
-        self.qid = qid
+        self.lid = lid

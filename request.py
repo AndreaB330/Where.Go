@@ -14,3 +14,8 @@ def events(cid):
     ls = c.locations.all()
     l = [{'name':x.name, 'lat':x.lat,'lon':x.lon} for l in ls]
     return json.dumps(l)
+
+@app.route('/complete/<lid>'):
+    c = Completion(0, lid)
+    db.session.add(c)
+    db.session.commit()
