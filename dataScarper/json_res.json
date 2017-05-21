@@ -1,0 +1,886 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CoQC_QAAAKBUfH2AFLODq5LlnmGbIOuvw4SD7s-SWfuqegvjJw3IGdfp-By6Glh38KnN6w0f6e77JZcW-WtK1IOolpXPBkPdEfyYXzV0HczE6s1X_14KlbyGgqrrPc-Jd2YjvEtRUcDCPwQGryKKCZ2DNRNp8xFIxwX3ZfLJUrcGgDj3S36Njfeub_5vD-reqZkW6VHk6Z6YhsjFC4t95xWuYGg3wvKPGtw4U3VVpIgNXjiYEBkzuTFsomPKpBSd1M1F5hEEVmIGwTh4YrcVmpCBNWyR7EqmADYgoPPCmK1JsT26xf9kpU0C6nJSYJkerOmznih-c385a6a55RYE-N1HMV41d-cSEJEpzl4wRof5yZLOoblUnMwaFOtXUiugyoeJKU-m8UoCi6D5jJBQ",
+    "results": [
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.4501,
+                    "lng": 30.5234
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.590798,
+                        "lng": 30.825941
+                    },
+                    "southwest": {
+                        "lat": 50.213273,
+                        "lng": 30.2394401
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+            "id": "e720ea1d8de0bf884832349361239d9eb1542685",
+            "name": "Kiev",
+            "photos": [
+                {
+                    "height": 1772,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102917463485741690698/photos\">\u0421\u0435\u0440\u0433\u0435\u0439 \u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAaVmXOCgCdTgZLNPhmzcIWsiJeo0lG_2CcHQ2UMYWLTBf6hZOus8Y0ZxON5IjN5_nNse5OGpIaM4YTtz2EwkLBRwTIGsaXPHUwj4Ok9WnEPq1l0RJsihTScjUAPZn02-SEhBSWPFa-aeCjlvituiyeyvMGhQpN2W8kYvTFOcGMtnS2Iw486Wmog",
+                    "width": 5701
+                }
+            ],
+            "place_id": "ChIJBUVa4U7P1EAR_kYBF9IxSXY",
+            "reference": "CmRbAAAA8_pQe8zS2LgelDbg61tF5MUCWokxV6ZLx1FEdIouGHavQHMaBkPhzyR8Yqhl2bifiFVtHyhJIPV7_9DFYiAKvbtQM9yAl7e3UBI2CSkKhH8RRT__jDDaqqAs0XXDNYXiEhDzmlqN2-k30WP_oiFFmOXxGhSF4yqoWJ1I7TbOc4SeBgiSBaANcQ",
+            "scope": "GOOGLE",
+            "types": [
+                "locality",
+                "political"
+            ],
+            "vicinity": "Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.451624,
+                    "lng": 30.509483
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.45293228029149,
+                        "lng": 30.5107576302915
+                    },
+                    "southwest": {
+                        "lat": 50.45023431970849,
+                        "lng": 30.5080596697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "84e0e3fe3f1a983a7c85478ad438485d0ed00cdc",
+            "name": "Radisson Blu Hotel, Kiev",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108696314446683360143/photos\">Radisson Blu Hotel, Kiev</a>"
+                    ],
+                    "photo_reference": "CmRYAAAARRPaOUU2-1PHIWp_XxgV2IF4aZ6Yva1M9F0p-qYiGK3b9lSaGni_hEmx7a52BI2FWWwnrflYgbNvSTcpt8E3CmRLhEbrawtZjrDh-VVhGfiDOHCx-anp6LiQnlg2R2znEhD4EJh5zH0tLEKZ5g8fAgacGhTNIto6oW-OpYY0U8ZJOaXkvBvRsg",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJoT8Iq17O1EARp6oxu9w-BQw",
+            "rating": 4.4,
+            "reference": "CmRRAAAAoUx01htKhjshKbhl7KbBg8G4JhJnjVxBPo36kDWJdaI9Y7VM70uV4NS-3Qbmbz5rHUPnx3hv8vMF4ce65PjOowy7eTVieLcCSicZ6_v-s9thPsS1ufQopPheEOcnPlX1EhApdtuIqK_YLgjakc0YyDTqGhQl46RutaP4Y7Pudf43GG55_Bmt0g",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Yaroslaviv Val Street, 22, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.44226099999999,
+                    "lng": 30.517463
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.44360998029149,
+                        "lng": 30.5188119802915
+                    },
+                    "southwest": {
+                        "lat": 50.4409120197085,
+                        "lng": 30.5161140197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "4f71f5d4cb0ee886a461611f7e7ea988b4a1622d",
+            "name": "Premier Palace",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 619,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106268277731891006397/photos\">Premier Palace Hotel</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAlW0dXheMyPKvPZgriwP-gDCfukJC-oqF19FNotdg2yUlLM0B3WPqSa6lrYgDjpG92kpVE_V6WAY-CoO4Eo4CDGDEVcdGkyhhCG_scJyq33QkMZGj-AKCQ_H21uo4zUOQEhCd7iuCGLBPP2aYSRWl8UpRGhQjTAdVF82xnWGPw7CBifHatjUNxQ",
+                    "width": 1200
+                }
+            ],
+            "place_id": "ChIJTTvJuPjO1EARAvaMUhJEkyM",
+            "rating": 4.6,
+            "reference": "CmRRAAAAWJWAhDhFmMK_-uw98Z6LAf0RnHKN3jZlidVJY70hV75RyA0P36ghQTglfaX96jLv1Kldb-b-AOL0DkTN4E-YtE6ImQIhT_Fx6uHal3r3jSd134NJdnTNdYtxiOyKppfDEhAnpmmmxQ_cnYCmISq2ZTCfGhR151Y12lOjV3H6U7kqu4sQP-ywEg",
+            "scope": "GOOGLE",
+            "types": [
+                "car_wash",
+                "bar",
+                "lodging",
+                "florist",
+                "restaurant",
+                "food",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "5-7/29 T. Shevchenka Blvd. Pushkinska St.,, \u041a\u0438\u0457\u0432"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.4499969,
+                    "lng": 30.44311250000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.45134588029149,
+                        "lng": 30.4444614802915
+                    },
+                    "southwest": {
+                        "lat": 50.4486479197085,
+                        "lng": 30.44176351970851
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "e6aacec4a9f07dafa61bc893112152979c23651f",
+            "name": "Cosmopolite Hotel",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1920,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109921393198547627480/photos\">\u042e\u0440\u0438\u0439 \u041c\u0435\u0440\u043a\u0443\u0440\u0438\u0439</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAX9EAqBdRRDQfTfVkgZgDJuEj-l6Wcpcy42JpSeeZudUfunyFUPhFWNagMyaFN-vbHpFrGZXTU0OhNKVsntfWrFlaM8kRGmYcYcEiEGbQx4TfVS80ySAqEm5QeahrYO8OEhA66BRZGC4wbLjOKOMqlIp4GhTkP59U_-CYgoKK5t3czwPyPxJqNQ",
+                    "width": 2560
+                }
+            ],
+            "place_id": "ChIJMWRJ0CTM1EAR3ogJrNX72_s",
+            "rating": 4.4,
+            "reference": "CmRSAAAAW10C7vAk6w4Hhedmdl1bIWucwe8ZMVqORyFrBfRcQjyVHbH9Q9aBgKt1xZ1gZWNNxWhNN9pgxe7EcfaPjinXGD2rrIHCUynlscRpSePvvLwKpPq0Pyvut8btvX9i7m7WEhB6IJdv74pi0mv-Dpu3dYaEGhT8ZBnBFhG0obEP0fwxb0riix1DIg",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Vadyma Hetmana Street, 6, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.45559550000001,
+                    "lng": 30.51955049999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4567985802915,
+                        "lng": 30.5208939802915
+                    },
+                    "southwest": {
+                        "lat": 50.45410061970851,
+                        "lng": 30.5181960197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "f23cb03e9e48b2228f1c6c1bdac6db679c65682a",
+            "name": "InterContinental Kyiv",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1365,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117531257104239554199/photos\">InterContinental Kyiv</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAfotfh493DCYXrjlOTFa3qv42Npu48uj3Ko3RWkGOA44AIU1yE3meU-7KaaXGFruHTDnJEHAY9aSunHKv2__2bAaKPXDVs259Pq8AggXV6x3jx6R7MbLhQ8wfY4CYc_RgEhC6fWXiykHtSRz5Vh5hsuRxGhTJxsqRGslnRkLawJ5EIu8-DIzPfQ",
+                    "width": 2048
+                }
+            ],
+            "place_id": "ChIJMacG20TO1EARJjy5F97N_vA",
+            "rating": 4.8,
+            "reference": "CmRSAAAAprhRSo3Z7Pkdq-_MfG_vcVt6kCc8u6v_VUh0xJM8wOVr_AyCtHMiTMFT9EvKzxkjhxwZJVHa-qpt-A8jeusWz0FmOTQfq0pZgOGI3KWQZaJNmj0U3QJyfNjKFuocJBmIEhA9L7-Wi8R5gvzROXabOQBAGhTU4Ef0QzJru3ztYHlnB8ksfllWZg",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Velyka Zhytomyrska Street, 2A, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.4513608,
+                    "lng": 30.5253218
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4525985302915,
+                        "lng": 30.52680293029149
+                    },
+                    "southwest": {
+                        "lat": 50.4499005697085,
+                        "lng": 30.52410496970849
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "2280fb0c9b246085c2d5664837164289c802ce48",
+            "name": "Hotel Khreschatyk Kiev",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3120,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/105682646724130962943/photos\">Gegham Vardanian</a>"
+                    ],
+                    "photo_reference": "CmRYAAAA_bcn9U9XKv5ruuJx9W3shsfxSdTDdvN59PJZUGtlCtdy0U8vGPWBuF8I3ofvTNLkqz827KfcPLiR2D6bLR-A26vuTcaQj9e_cVHS6kmIXWgUm4UlJ93cYfZRXtIAtuBHEhAky4E6d_tarcEX6TvvxjVSGhQEJbqhW7Nn6xp1wg7b1NSY9nRxyw",
+                    "width": 4160
+                }
+            ],
+            "place_id": "ChIJzeiLW1DO1EAR3WGrIbDpvW8",
+            "rating": 4.3,
+            "reference": "CmRRAAAAt3kWwnFTAQka_I3Ewhr3AwBGCQiem-RsgTzNc6K19AO3yW7K2NmNv6GnvjH2w79MGdImqJMRDMyAWldJHN8lPh8vQuzakaCCpDIDL8VacTLNUk7EgKfNd0Z57pq0LKYkEhAC7yajUPiMty0quk1ww8WcGhRuOHCO8oX3qCP3yDQJQ1SfmWkS6Q",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Khreschatyk Street, 14, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.45322179999999,
+                    "lng": 30.5185605
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4545946302915,
+                        "lng": 30.5199719302915
+                    },
+                    "southwest": {
+                        "lat": 50.4518966697085,
+                        "lng": 30.5172739697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "8a5b39d1ce3ca4cf743bac86625f348628b0f2ff",
+            "name": "Hyatt Regency Kyiv",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1184,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117923526305027109480/photos\">Hyatt Regency Kyiv</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAfuAOf-N6YL3UioEF9dHswPG-Avaq-9yiVEm2geKJQizoeFRMiy0NyuSHIvJ8A6exCjsNZiMoe6nQIsABirAyZjreQmp5pORZv6PPnzaS6BNlHXnjJgTpyZqOsKDDEJHbEhBPjrCQoXr8Xpy8uvwpKEGGGhRh8Eb2JOfICmWKgk3aerbsnnRG2w",
+                    "width": 2048
+                }
+            ],
+            "place_id": "ChIJPUMO5lrO1EAR6wTsBZ18RuQ",
+            "rating": 4.7,
+            "reference": "CmRSAAAAmvIYt7mtSHzlm48Cpog8NfFysXAVt2jbq5qh5WwwFlIP8oUgpwMhR_ykoS1eVzC8dhRghQIhzdzpiXDItf789by7Sg5tNSXLb0cmC87HjfNOxYL5F7lzsvumjDrl0kkCEhCOs8vHVLSUOH78jE7zLY3jGhTohjbI_GFLAMo5VK3v1Za2W4fcyw",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Ally Tarasovoi Street, 5, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.44320199999999,
+                    "lng": 30.521362
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4446025302915,
+                        "lng": 30.5223595302915
+                    },
+                    "southwest": {
+                        "lat": 50.4419045697085,
+                        "lng": 30.5196615697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "7af25511c85cc8f3033f0bab9fbff07ac538c8ab",
+            "name": "Gostevoy Dom Kreshchatik",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 400,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/116332516014296398316/photos\">\u0413\u043e\u0441\u0442\u0435\u0432\u043e\u0439 \u0414\u043e\u043c \u041a\u0440\u0435\u0449\u0430\u0442\u0438\u043a</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAQ4W5X_aEuZCnWXNvkf_HCEKFRLvFHBMxSEH6J7moCCsL97EJYm7wv03cH30DyFgoIRczn70LzZJliGRLonGmAT793NSrrg952Z5SIa6CpsOBKH54_yG-V3R4z2LBxGjfEhDDHGfuBcu7jA8-aZfj_PsOGhQbqIkAWUk-au2Z2vKUPy4tzBvlJQ",
+                    "width": 799
+                }
+            ],
+            "place_id": "ChIJIwfp8FXO1EAReV5lr67PXgs",
+            "rating": 3.6,
+            "reference": "CmRRAAAAcU8lrSH3S5MmqbiD_RlyKZz8mgT_IJwYidZZxm1MqKxIbnbfIe60V0tEPHpDgbPIR7zISM8r9DwZZzirGl8JAuh6rRJ-NsT3X7Oc_XBb54_SK0KxqbrN5N8jHvMUzFAYEhAARlkco_qVapzbx5XnUdrwGhQiV9FLaWCGqgUIpyyGcaMfFt5lDg",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Khreschatyk Street, 29/1, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.4597299,
+                    "lng": 30.5233809
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4611511302915,
+                        "lng": 30.52484758029149
+                    },
+                    "southwest": {
+                        "lat": 50.4584531697085,
+                        "lng": 30.52214961970849
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "e23803eb95532c381309b57df9d771eea7ebfd38",
+            "name": "Impressa",
+            "photos": [
+                {
+                    "height": 1836,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107691673096291234906/photos\">Bogdan Vorobey</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAsHUzSVhpgQRJ1MRbSyXR-OYVKRqslSMo3EI8tfCj6lg3hztFrCWyYIjS1F1CAc59Dy-dxMHqt1FtoX9_hgSot18tsFnPvHag5FSxSgPsBMgVyU2T_FqW8ENfWm3C0L8GEhDplWvMz928SLyAEaFz6gnBGhTI2cOh0XzhHVRL3zCBe8XC7JM43w",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJJUEBeZLS1EARgHlLcrgebfk",
+            "rating": 4,
+            "reference": "CmRSAAAA312-qmfSYCN_QnBRzyGHm9F2kAwSvwqXeMPgbYV1mJBGtI0mtTTEwYyoh-ct2VJvt1z1wYQK954R4wiwCIq_rp9i2o2Tm9VJyFHyZAwfV8tIpEYqeqKSh2IbDmZRxX8iEhCZMdCq63AKijBFHzG7yl_hGhTq---1bhEZwAmoddk9RCKi3UjCzg",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Petra Sahaidachnoho Street, 21, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.4514684,
+                    "lng": 30.5212913
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4527774302915,
+                        "lng": 30.5226153302915
+                    },
+                    "southwest": {
+                        "lat": 50.4500794697085,
+                        "lng": 30.5199173697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "1d6d14d89546eeb79d8e5b7618a19fccc7dacad8",
+            "name": "City Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2448,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117469776490189801828/photos\">FELix B</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAHxhVoyzyXyebWIWmGzM9TNmXPWLug_RXDbOVOu2o7tCXJPKa8BZ4JIiULpZlL9tk_dJZ03JBOtcrdkLwnEf5HeR6y_PfVS51ZvtQ-wE9Js0wgralvlBDKxm_I6bvEL1JEhDMXr4-VeNB04m0hXRLDyIqGhS1EED_utZN2zWKcEKQECm5REbEOQ",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJKwuIZFDO1EAR4-2w5CO9lME",
+            "rating": 2.2,
+            "reference": "CmRSAAAA4qKV1u5VSuXGx6OF1yM43SmKovA8mmz5yRcoJYUAy_2-eeVVR-Nxcn9j7vNWRLSDEfr96OT1_vZQ2XxRZynB_OMZsGfslcWgczj8yKcCcj6Nxb574Gh8zQ1q6YgPSRedEhCz_s6nCtq0ltaX3J1ESQWgGhTNSz53TAZIdEVS4ZuIbKQwtUp8nQ",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Sofiivs'ka Street, 2, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.433719,
+                    "lng": 30.5330351
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4351744802915,
+                        "lng": 30.53403878029151
+                    },
+                    "southwest": {
+                        "lat": 50.4324765197085,
+                        "lng": 30.53134081970851
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "0130b28608136557f424a174c13edfc77a78b354",
+            "name": "Gar'is Hostel",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 961,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/110281583365351835635/photos\">Gar&#39;is Hostel</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAKcxtq6JMM6sYuF3RUFyHCtR6qU-06n8jvXq0Abj6Ko33s_3Y0vd48BoX65YnPPaGhd7fj2O7PwtDBbjVVbU5C5X1MH55joS0vulW1wQouYaGdrOVHCzIkD9Fk0G7HIl9EhBG5R-9efcmrfTV9FTyk4zIGhTU1-_dmnVG1cmE00u4qiI1LIpQ_w",
+                    "width": 1280
+                }
+            ],
+            "place_id": "ChIJo2VogAbP1EAR88pL878aMfY",
+            "rating": 4.3,
+            "reference": "CmRSAAAAX0poJgVCBgd0p_zeUVp1cDbDAWnVv_1H8nMizcWXXLaVsZAi9FoL2oadwtT0jH63m7AhM4bCfEf8NWtDIX_hzIvbmEfRNJkZfcAT9rodEIF8sZ3MTE-cSyzmlT__Bh_mEhBTIrdFsHXvHJzxWJQYD6G1GhSkvDNbvbBcLm-s4ZpnVusMkxCvOg",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Leonida Pervomais'koho Street, 11, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.447521,
+                    "lng": 30.50573200000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4487459802915,
+                        "lng": 30.5070268302915
+                    },
+                    "southwest": {
+                        "lat": 50.4460480197085,
+                        "lng": 30.50432886970851
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "3fee8143ab16c9283b7cacec1a4bfb9dbe374b4d",
+            "name": "CITYHOTEL",
+            "photos": [
+                {
+                    "height": 1365,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/118398651496662212346/photos\">CITYHOTEL</a>"
+                    ],
+                    "photo_reference": "CmRYAAAA7MPqzaOsnZSf4ffZgZDAfxQWTzg-Gmb1QS-26scmaQo-PZcRbgpcHZDrQQdiXDa5FyRRoHUoq3jQ2btffNtG5LpOuKecUGGm0qBxHfW51HCqymLTPC9jT0urL_KycCwREhBczL7X7hd22AILq3j14MVcGhRYd_vn_0UEGTEWbBN1ERWnYmrLVQ",
+                    "width": 2048
+                }
+            ],
+            "place_id": "ChIJTbydrFjO1EARj2VQkf0sGwg",
+            "rating": 4.5,
+            "reference": "CmRRAAAA3H3ERnfbwurmI7sybqF3L8D6N30_Cf3lEy603GUTvs0KnlbdVeOgvEb-gqXL-occ66_n2kJkLqFf9twWSn0mhEcRZ6iGv6U7U-VMKpfGkW088pGztzHO_F0VBw2Xy1y1EhAONOUbGFTHf0SFQCs5eWtEGhT_ecEuK5723lbvH1b23_DThkLvPA",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Bohdana Khmel'nyts'koho Street, 56\u0410, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.452604,
+                    "lng": 30.489203
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4539141802915,
+                        "lng": 30.4903502302915
+                    },
+                    "southwest": {
+                        "lat": 50.4512162197085,
+                        "lng": 30.48765226970851
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "3841009b73f7138fe42b8327499fd81dce10dff1",
+            "name": "Senator Apartments Executive Court",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3927,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106430571432053845797/photos\">Senator Apartments Executive Court</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAWSRJLJYQim678CDZNq6QLkxVsn41PK79Yl_PhdE3DWlhc0wd27SqcpglvEIUHOx8WVPccLF_hgXmbEGjR-uZpqIOyb5gAbiHdPtywRFuTNc8jJL2hSbVjfazIQ8F3tUbEhDiX1I312LwqEWABK1M3HrCGhRpfT9Un2m1s--he0J5GLBIbQakqg",
+                    "width": 5236
+                }
+            ],
+            "place_id": "ChIJSSUScmLO1EARd4ARPgdbN5o",
+            "rating": 4.6,
+            "reference": "CmRSAAAA7G0HhNPi7da2PSIhFEqoMoORTSdlRRfDxhr4S1eq68fJcIvPakyq13L5LZnvD_EUPhQhRxWPKnOLmFASl3Bbka4mMO-JIoVa4Fq7junSt-tauwb2xv3fme8FquzcuEt-EhBLh9iTjmXYt6PKtu5oXmBfGhQovLvp9Uz886Uy5xS2fUoy-y51sw",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Dmytrivska Street, 62/20, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.44614199999999,
+                    "lng": 30.517237
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.44711708029149,
+                        "lng": 30.5184424802915
+                    },
+                    "southwest": {
+                        "lat": 50.44441911970849,
+                        "lng": 30.5157445197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "073342d1daf11a98f461262cb2c0c377b4e42d34",
+            "name": "Theatre Boutique Apart Hotel",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1707,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115880843809350055553/photos\">Theatre Boutique Apart Hotel</a>"
+                    ],
+                    "photo_reference": "CmRYAAAA4ZJ7lW8U78oPyZYa93lRZ8J8tnpBaPSHBHEY0hFOMOhrnxWJzErUOMyZYs7RtibATiLFJ_-b4eUlGuiMiImQqm42EcWVj1BUbh-fuv4faQW6JRgE2Dn0jnsKsaHQHN8eEhAd9nQdpZl8vc5qfSp_yUDqGhQNkUBnpzR8YV4t2GDdSH2geYWdlQ",
+                    "width": 2500
+                }
+            ],
+            "place_id": "ChIJIVz_pVfO1EARPfrEDZ4nOa8",
+            "rating": 4.1,
+            "reference": "CmRSAAAA-i_outbCPSOzDMaIicEL6M--UUmH0E7EXkD4jHzBBkfpyvmUJQRCrt2rg_-XGCruVixhTyuhimN2FY01BMqjG1R52oNeIlC5btj6LhrtSUXl0WiNNJtQAtOSgIM4RdyVEhDHKsZ2SzQoqvkhFLu38tWmGhR4IsV1y430XDlEV889PEmnHblclw",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Bohdana Khmel'nyts'koho Street, 10, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.4461436,
+                    "lng": 30.5055831
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4474122302915,
+                        "lng": 30.50742688029151
+                    },
+                    "southwest": {
+                        "lat": 50.4447142697085,
+                        "lng": 30.50472891970851
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "79c64837c0657b020a2d0ce26f5d19bb7ed5816d",
+            "name": "Senator Apartments City Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 533,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111662871658668914206/photos\">Senator Apartments City Center</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAKR1qHmg4qJvkEsJSjKiTr3LOxL46aWEorARicIlPu191X3fYFc5gXfkbIIMFTMBLnKCbbCRn20UBvSe-mcdTH6VSEhCzXTq1i_Q1sfzUYI_OZ80lLbOmYKMcPfcJvCfLEhCYqBPcQIiAV-dlP_LHdWjcGhTQn1030ClnxzOSyN_wxyOlyHSlPA",
+                    "width": 800
+                }
+            ],
+            "place_id": "ChIJf2ddEfbO1EARDTfA-zXWR8M",
+            "rating": 4.8,
+            "reference": "CmRSAAAAYhMCMQHAQGiETebQY-gFt2QT3CkQrP8Z7L4eWw84tmrxNksHE7E4ldlI1R9pjjQxl6pDvMdxjufiqxgHKLckd17qVhhRW3smqGzDSYleNJndaceThr6QGR6mQLt8zDJjEhCbsaYjNgPdZNlVEJZ3oWTVGhTOQiACXh_wQl_lYCerXpjX4SZXBQ",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Pyrohova Street, 6, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.43571499999999,
+                    "lng": 30.5140194
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4371800302915,
+                        "lng": 30.5153641802915
+                    },
+                    "southwest": {
+                        "lat": 50.4344820697085,
+                        "lng": 30.5126662197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "fca1c65af2c9c24e76b06a7f741547b956acdbe2",
+            "name": "Magic Bus Kiev",
+            "photos": [
+                {
+                    "height": 3480,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112074656884723333931/photos\">Jothi Vanan</a>"
+                    ],
+                    "photo_reference": "CmRYAAAA568UC4MM30Hsc7qh2FVm15pi-o_SuQnNk0MDsXOxf1-gtXtn5QoG905zE6LU0oIBlmkpiOvFa6JketZFBQVu6FYdG2HsBJbV55U2hCU-t2riOo5T8x6aHXRY-y6Se7OJEhCjFqqixwHsl1iO4n_NbzvKGhRHOT9bfRMYxZgtIvALy5Io12_YzQ",
+                    "width": 4640
+                }
+            ],
+            "place_id": "ChIJa-l6m_zO1EARwt3oc6fMwMI",
+            "rating": 4.5,
+            "reference": "CmRSAAAA1sVmH6q6AkR9FsQK8usYp02kA120EiBa9tyhBZq3SxNYfd6TdbJtgvfUZK-YdMremojKbPeJ_ABqO89Fv55Oj0eb9XsztVSU2zmByeO6hskVza8U1Uxi6NHdSwwAxYQ4EhCjn1AJscFISdfKmvjMSwp8GhR3yLzKoDAKwIQYKFnIDbH2P8ag6w",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Saksahanskoho Street, 31/27, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.4621417,
+                    "lng": 30.51664970000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4633046802915,
+                        "lng": 30.51828908029151
+                    },
+                    "southwest": {
+                        "lat": 50.4606067197085,
+                        "lng": 30.51559111970851
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "3e70bf31266664719bc459fd29f2ceb01ed4a8fb",
+            "name": "Dream House Hostel & Bar",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 683,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107510973565291775806/photos\">Dream House Hostel</a>"
+                    ],
+                    "photo_reference": "CmRYAAAAuqvoW-3lLE1cQgWVqyAo8kcGoIKzPZnYHIpuo_QtkUBhs0zsgAsOoBh6BmUgO2Wj1f3IbjbvfeNjYdkAmHK-AF5Sxp463ByNq7R3eGQTxtSeYkj55i9WCnOXK8sCxl86EhAcTrUxPZnnvpdyIc5Ern_DGhTlK768cpnF1sE-3j7FWdG7ce9kGA",
+                    "width": 1024
+                }
+            ],
+            "place_id": "ChIJqdYokUHO1EARCagJNMuNUrU",
+            "rating": 4.7,
+            "reference": "CmRSAAAAguBMhmX6WcBqPtprOKJB-tET8dLsb35IMuUpso4nVekE7t6GQ6ilTH8Us6kGWHi2DaGGXPyUEn2gFLHT4fTCM7ZYIUAjTAR5bd7OZstq6cB6On6Jxz8HqFU2bj92ppIiEhCiGe93X62ZvvbcmVFHC-6QGhSN7bFC-o5GMfR7gGdNQCa3FqzyhQ",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Andriivs'kyi descent, 2, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.4673619,
+                    "lng": 30.5115338
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4687108802915,
+                        "lng": 30.5128827802915
+                    },
+                    "southwest": {
+                        "lat": 50.4660129197085,
+                        "lng": 30.5101848197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "338e2df84462f38fe56a450c47711dd8d3a97c74",
+            "name": "Kiev-Art Hostel",
+            "photos": [
+                {
+                    "height": 2672,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101840417931317244725/photos\">Marian Kocisek</a>"
+                    ],
+                    "photo_reference": "CmRYAAAASig1R5AdGZlEHzU7yLjaz7ePRcpiE0iU2BpOgspVO5N0jyEYG2_GDfEIpqUiqEjwDG84gTjoPrM6j9tinKG5LNB9slDhbw6g-wNE2n-PIheH3Rr81yZ6xsNDcEYtdSxbEhCoXM3O_78Ftu3hz1NtFutdGhRAgNOp9pEf0NsMNVrxGoNOmjnWQA",
+                    "width": 4752
+                }
+            ],
+            "place_id": "ChIJifGDSGvO1EAR2fyK6x41_d0",
+            "rating": 4.3,
+            "reference": "CmRSAAAAz39m6OA4U5HUonX_Ru_CMuxnJ_QlR3rvXgWtibkib6kVez6j0pPTe8r74EOcSP5EqfSc-ppm6cVOWJ-e5ae5x6mpZiJmXb2SQ2QtjNVyHBCkkZ5dMva6K_-h5DjgrCuYEhBoy0Bg0sNLvw3g8SNi9jgCGhRU7VDvmJrSHAL0lnQfgGLudfnouA",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "Kostiantynivska St, 20/14, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.43101189999999,
+                    "lng": 30.5353205
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.4323608802915,
+                        "lng": 30.5366694802915
+                    },
+                    "southwest": {
+                        "lat": 50.4296629197085,
+                        "lng": 30.5339715197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "id": "5bb521b7039371397a2dde7fdc5b5a166e319c54",
+            "name": "EuroHostel Kiev",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106475051734499950241/photos\">Andriy Kuba</a>"
+                    ],
+                    "photo_reference": "CmRYAAAABUnQAKIY08EUOPgxSiZYWX5dfn2Zbigg1GelwYLZ5sjbI3bgfleKYp1XoiDt9DZkYkOE28gVDnkAQbiTUASumY5MA9Ccx5-_lKi7OGTnuvqXdQzTgKJWFlVNhTV6oGpmEhA9V0Ottp91z9x-S1At71WKGhQ0_Q-Jz93jdHQepJfVVP6FmJdZrw",
+                    "width": 3008
+                }
+            ],
+            "place_id": "ChIJQ2e3Yw_P1EARYvDd9KNx5oc",
+            "rating": 4.2,
+            "reference": "CmRSAAAA0btWNceXGaLhPSgGoNmlyRpUxX_rqY9vrWi66WxNu3uXbmmMBehoD0pjcCv2FW9DmbHd1Wsw1SYCWmJ6fzi12TUpxC2jGHGqaJvFYYbaF__rAJmNFVyoZkRfFqJnP_V0EhBQzprPjscjBJypfth4H0ZmGhQ5v3b1GX1aTZenqQWOsT55EL6XeA",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "vicinity": "bul'var Lesi Ukrainki, 11, 31, Kiev"
+        },
+        {
+            "geometry": {
+                "location": {
+                    "lat": 50.464301,
+                    "lng": 30.345138
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 50.547732,
+                        "lng": 30.429484
+                    },
+                    "southwest": {
+                        "lat": 50.397983,
+                        "lng": 30.2394401
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+            "id": "c3b34f45a01ec01cb7867287595c5323a51355ba",
+            "name": "Svyatoshyns'kyi District",
+            "photos": [
+                {
+                    "height": 1836,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114346217045959278060/photos\">\u0410\u043d\u0442\u043e\u043d \u041c\u0430\u0440\u043a\u043e\u0432</a>"
+                    ],
+                    "photo_reference": "CmRYAAAANBUdHwPOIJiWcLUGSVT4Do7-_UF8LLzmVkb1qlf6OiE8Yvz6cjzNbhnDow1HoLmzzgDMnAP0R2fldYLUukqAFcDTlLO1DsvR1PWK7BOJBbpZizJbjqrSWkyYEX26bhMnEhCW-N616BD0Dk990XNvM4EvGhTZkHdC4xqjDX3bZRsUl9_ITTkIOA",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJOUkzm7XM1EAR7vEMYWT3rrc",
+            "reference": "CmRbAAAAyIfjFHVHTAo5tCrSZsxfuy_L3QKlUmsJnZTx1BiK5yzI2LdZGAZ8VsKEvnu5XiCsD6VcQNf82p1Ct0_aebXQ8uzLklqMUr_ivFeV6k2rpvwAey2TbEHEbb4lh_5t32yqEhBTg1tGc2z7bvUIrE1RC_7MGhQPo2sBp2xlYLvWVbCoa0iFz_peIw",
+            "scope": "GOOGLE",
+            "types": [
+                "sublocality_level_1",
+                "sublocality",
+                "political"
+            ],
+            "vicinity": "Svyatoshyns'kyi District"
+        }
+    ],
+    "status": "OK"
+}

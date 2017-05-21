@@ -1,0 +1,66 @@
+{
+  "categories": [
+    {
+      "name": "photo",
+      "words": [
+        "monument",
+        "view",
+        "landscape",
+        "beautiful",
+        "architecture",
+        "wonderful"
+      ]
+    },
+    {
+      "name": "history",
+      "words": [
+        "history",
+        "castle",
+        "church",
+        "memorial",
+        "palace",
+        "monument",
+        "university"
+      ]
+    },
+    {
+      "name": "nigthlife",
+      "words": [
+        "club",
+        "night_club",
+        "bar",
+        "alcohol"
+      ]
+    },
+    {
+      "name": "active_rest",
+      "words": [
+        "amusement_park",
+        "park",
+        "walking",
+        "entertainment",
+        "sport"
+      ]
+    },
+    {
+      "name": "shops",
+      "words": [
+        "shop",
+        "brands",
+        "selling",
+        "mall",
+        "supermarket",
+        "market"
+      ]
+    },
+    {
+      "name": "keep_calm",
+      "words": [
+        "calm",
+        "quiet",
+        "romantic",
+        "park"
+      ]
+    }
+  ]
+}
