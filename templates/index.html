@@ -16,7 +16,7 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="static/js/materialize.min.js"></script>
         
-        
+       
         <div id="slide-out" class="side-nav fixed">
                 <!-- Левый СайдБар -->
                 
@@ -29,20 +29,46 @@
                     <div class="card-content" style = "background-color: #2DB062">
                         <h4 style = "color: white">"Ночная Жизнь"</h4>
                        
-                        <p style = "color: white; float: left; padding-right : 0.3em">2 / 10</p>
+                        <p id = "places_count_number" style = "color: white; float: left; padding-right : 0.3em">0 / 10</p>
                         
-                        <div class="circle complete"></div>
-                        <div class="circle complete"></div>
-                        <div class="circle incomplete"></div>
-                        <div class="circle incomplete"></div>
-                        <div class="circle incomplete"></div>
-                        <div class="circle incomplete"></div>
-                        <div class="circle incomplete"></div>
-                        <div class="circle incomplete"></div>
-                        <div class="circle incomplete"></div>
-                        <div class="circle incomplete"></div><br>
+                        <div id = "places_count">
+                            <div class="circle incomplete"></div>
+                            <div class="circle incomplete"></div>
+                            <div class="circle incomplete"></div>
+                            <div class="circle incomplete"></div>
+                            <div class="circle incomplete"></div>
+                            <div class="circle incomplete"></div>
+                            <div class="circle incomplete"></div>
+                            <div class="circle incomplete"></div>
+                            <div class="circle incomplete"></div><br>
+                        </div>
+                        <script>
+                            var places_count = 0;
+
+                            function add_place(){
+                                places_count ++ ;
+                                document.getElementById("places_count").innerHTML = "";
+                                document.getElementById("places_count_number").innerHTML = "";
+                                
+                                if(places_count > 10)
+                                    places_count = 10;
+                                
+                                for(var i = 0; i < places_count; i ++){
+                                    document.getElementById("places_count").innerHTML += ('<div class="circle complete"></div>');
+                                }   
+                                for(var i = places_count; i < 10; i ++){
+                                    document.getElementById("places_count").innerHTML += ('<div class="circle incomplete"></div>');
+                                }
+                                
+                                document.getElementById("places_count_number").innerHTML = places_count + " / 10";                                
+                                document.getElementById("places_count").innerHTML += "<br>";
+                            }
+
+                        </script>    
                         
-                        <p style = "color: white; padding-top: 0.2em">10 мест для любителей ночной жизни бла бла бла бла бла бла</p>
+        
+                        
+                        <p style = "color: white; padding-top: 0.2em">10 мест, которые обязательно стоит посетить людям которые полны энергии и жаждут развлечений</p>
                     </div>
                     
 		    <div id="status"></div>
@@ -59,72 +85,6 @@
                     <div class="card-stacked">
                         <div class="card-content">
                             <h5 class="placecardtitle">Saxon</h5>
-                            
-                            <p style = "float: left; padding-right : 0.3em">4.0</p>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle incompleteorange"></div><br>
-
-                            <p>Кафе · Peremohy Ave, 3 <br>
-                                Opens at 8:00 AM</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card horizontal clickable">
-                    <div class="card-image">
-                        <img src="static/saxon.jpeg" style="width:100px;">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <h5 class="placecardtitle">Skybar</h5>
-                            
-                            <p style = "float: left; padding-right : 0.3em">4.0</p>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle incompleteorange"></div><br>
-
-                            <p>Кафе · Peremohy Ave, 3 <br>
-                                Opens at 8:00 AM</p>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="card horizontal clickable">
-                    <div class="card-image">
-                        <img src="static/saxon.jpeg" style="width:100px;">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <h5 class="placecardtitle">Skybar</h5>
-                            
-                            <p style = "float: left; padding-right : 0.3em">4.0</p>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle completeorange"></div>
-                            <div class="circle incompleteorange"></div><br>
-
-                            <p>Кафе · Peremohy Ave, 3 <br>
-                                Opens at 8:00 AM</p>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                <div class="card horizontal clickable">
-                    <div class="card-image">
-                        <img src="static/saxon.jpeg" style="width:100px;">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <h5 class="placecardtitle">Skybar</h5>
                             
                             <p style = "float: left; padding-right : 0.3em">4.0</p>
                             <div class="circle completeorange"></div>
@@ -193,10 +153,12 @@
               var latLng = new google.maps.LatLng(50.3932959, 30.4786708);
               var marker = new google.maps.Marker({
                 position: latLng,
-                map: map
+                map: map,
+                icon: "static/graymarker.png"
               });
               marker.addListener('click', function() {
                 map.setCenter(marker.getPosition());
+                    add_place();
               });
                 
 			};
