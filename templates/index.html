@@ -149,10 +149,13 @@
 					mapTypeId: 'roadmap'
 				});	
 			}
+		function complete_event(event_id) {
+			alert("Test!");
+		}
             function add_marker(event, complete){
 		    var s = "";
 		    if (!complete) {
-			    s = '<button class="completer btn waves-effect waves-light green" type="submit" name="action">Я тут был! <i class="material-icons right">send</i></button>';
+			    s = '<button class="completer btn waves-effect waves-light green" type="submit" name="action" onclick="complete_event(' + event['id'] + ')">Я тут был! <i class="material-icons right">send</i></button>';
 		    }
 
             var contentString = 
@@ -160,7 +163,6 @@
                     '<h5 id="firstHeading" class="firstHeading">' + event['name'] + '</h5>'+
                     '<div id="bodyContent">'+
 			    s +
-			    '<script>' + '$(".completer").click(function(){alert("Pushbutton!");})' + '</' +'script>' +
                     '</div>'+
                 '</div>';
 
