@@ -69,7 +69,7 @@ quest=db.Table('quest',
 class Location(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(128))
-    rating = db.Column(db.Integer)
+    rating = db.Column(db.Float)
     lat = db.Column(db.Float)
     lon = db.Column(db.Float)
 
