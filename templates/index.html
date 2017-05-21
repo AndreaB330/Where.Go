@@ -22,8 +22,8 @@
                 
                 <!-- Карточка с названием, количеством выполненных и описанием -->
                 <div class="card">
-                    <div class="card-image">
-                      <img src="static/night_life.jpeg">
+                    <div id="cat-card-image" class="card-image">
+                      <img src="static/c1.jpg">
                     </div>
                     
                     <div class="card-content" style = "background-color: #2DB062">
@@ -96,9 +96,9 @@ function select_category(cat) {category = cat; reload();}
 					type: "GET",
 					url: '/category/' + cat,
 					success: function(msg) {
-						j = JSON.parse(msg);
-						document.getElementById('cname').inner.HTML = j['name'];
-						document.getElementById('scname').inner.HTML = j['short_name'];
+						document.getElementById('cname').innerHTML = msg.name;
+						document.getElementById('scname').innerHTML = msg.short_name;
+						document.getElementById('cat-card-image').innerHTML = '<img src="/static/c' + cat + '.jpg">'
 					}
 				});
 			}
