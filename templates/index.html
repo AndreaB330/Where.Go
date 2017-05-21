@@ -55,6 +55,8 @@
                         </div>
                         <script>
 			var category=1;
+            var arrayOfMarkers = [];
+                            
 			function load_category(cat) {
                             $.ajax({
                               type: "GET",
@@ -62,7 +64,6 @@
                               success: function(msg) {
                                   events = JSON.parse(msg);
                                   events[0]['name'];
-				  arrayOfMarkers = new Array(10);
                                   for(var i = 0; i< 10; i++){
                                     var string  = '<div class="card horizontal clickable" onClick="google.maps.event.trigger(markers[' + i +'], "click");">' 
                                             + '<div class="card-image">' 
@@ -87,6 +88,15 @@
                             });
 			}
 			function reload() {
+                //Delete markers
+                document.getElementById('places_cards').innerHTML = "";  
+                if(arrayOfMarkers != null){
+                    for (var i = 0; i < arrayOfMarkers.length; i++) {
+                        arrayOfMarkers[i].setMap(null);
+                    }
+                    arrayOfMarkers = []
+                }
+                
 				load_category(category);
 			}
 			window.onload = reload
@@ -210,7 +220,7 @@
                 map.setCenter(marker.getPosition());
                 opened = true;
               });
-		    arrayOfMarkers[event.id] = marker;
+		    arrayOfMarkers.push(marker);
 
             }
 		</script>
